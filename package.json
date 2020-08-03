@@ -1,0 +1,34 @@
+{
+  "name": "strapi-provider-email-mock",
+  "version": "1.0.0",
+  "description": "A simple in-memory mock mail provider for strapi.io",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaxr/strapi-provider-email-mock.git"
+  },
+  "keywords": [
+    "strapi",
+    "provider",
+    "email",
+    "mock"
+  ],
+  "author": {
+    "email": "ricci@primateer.de",
+    "name": "Viktor Ricci"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vaxr/strapi-provider-email-mock/issues"
+  },
+  "homepage": "https://github.com/vaxr/strapi-provider-email-mock#readme",
+  "strapi": {
+    "isProvider": true
+  }
+}
