@@ -3,6 +3,25 @@ A simple in-memory mock mail provider for strapi.io
 
 ### Usage
 
+Setup in `plugins.js` like any other provider:
+
+```js
+module.exports = ({env}) => ({
+  email: {
+    provider: 'mock',
+    providerOptions: {},
+    settings: {
+      // If set to false, each email sent will be logged to console
+      quiet: true,
+      defaultFrom: 'strapi@example.com',
+      defaultReplyTo: 'strapi@example.com',
+    },
+  },
+});
+```
+
+Each mail sent gets pushed on the recipient's stack and can be retrieved via `.popMail(...)` as follows:
+
 ```js
 const email = require('strapi-provider-email-mock');
 
