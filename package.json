@@ -1,11 +1,11 @@
 {
   "name": "strapi-provider-email-mock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple in-memory mock mail provider for strapi.io",
-  "main": "index.js",
   "directories": {
-    "lib": "lib"
+    "lib": "./lib"
   },
+  "main": "./lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
